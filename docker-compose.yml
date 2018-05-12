@@ -13,6 +13,7 @@ services:
       - 9300:9300
   kibana:
     image: docker.elastic.co/kibana/kibana:6.2.4
+    container_name: kibana
     links:
       - elasticsearch
     depends_on:
